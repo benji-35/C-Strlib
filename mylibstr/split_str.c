@@ -54,7 +54,6 @@ char **split_str(char *str, char spliter)
         curr ++;
         i += to_mal;
     }
-    result[nbsplit + 1] = malloc(sizeof(char));
     result[nbsplit + 1] = NULL;
     return (result);
 }

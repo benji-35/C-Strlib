@@ -20,7 +20,7 @@ void str_to_upper_case(char *str);
 char *concat_str(char *str1, char *str2);
 char *int_to_str(int nb);
 int str_to_int(unsigned char *str);
-char **str_get_world(char *read);
+char **get_words(char *str);
 int lenght_split(char **split);
 void free_split(char **split);
 char **get_world(char *str);
@@ -28,5 +28,6 @@ void insert_char_str(char **str, int position, char c);
 int str_char_occur(char *str, char c);
 void str_rm_fchar(char **str, char c);
 void str_rm_occhar(char **str, char c);
+int is_alphanumeric(char c);
 
 #endif /* !MYSTR_H_ */

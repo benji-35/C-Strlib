@@ -37,7 +37,7 @@ Listes des fonctions et à quoi elles servent:
 
 - int strat_with(char *str1, char *str2) -> Retourne 1 si la string 1 commence par la string 2
 
-- char **get_world(char *str) -> Retourne une liste de string dans lequel se trouve tout les mots d'une string.
+- char **get_words(char *str) -> Retourne une liste de string dans lequel se trouve tout les mots d'une string.
 
 - int str_to_int(unsigned char *str) -> Change une string en int. La fonction retourne les résultat
 

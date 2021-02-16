@@ -16,17 +16,18 @@ SRC = concat_str.c	\
 	copy_str.c	\
 	int_to_str.c	\
 	str_to_int.c	\
-	str_get_world.c	\
+	str_get_words.c	\
 	inverse_str.c	\
 	insert_char_str.c	\
 	free_split.c	\
 	insert_char_str.c	\
 	nb_char_occur.c	\
-	remove_first_char.c
+	remove_first_char.c	\
+	char_is_an.c
 
 OBJ = $(SRC:.c=.o)
 
-NAME = libmy_str.a
+NAME = libmystr.a
 
 HEADER = mystr.h
 
