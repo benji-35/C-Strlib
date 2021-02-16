@@ -33,7 +33,7 @@ Listes des fonctions et à quoi elles servent:
 
 - char **split_str(char *str, char spliter) -> Split une string par rapport à un char "splitter" et retourne un tableau de string avec toutes les strings entre ce splitter. Si une string est NULL alors la fonction renvoie NULL.
 
-char *split_to_str(char **split, char *separator) -> Transforme le split ou un text en un string. La fonction retourne la string. Separator permet d'ajouter un string ou un char (sous forme de string) entre les lignes. Exemple : "\n" va permettre de séparer toutes les lignes par un \n.
+- char *split_to_str(char **split, char *separator) -> Transforme le split ou un text en un string. La fonction retourne la string. Separator permet d'ajouter un string ou un char (sous forme de string) entre les lignes. Exemple : "\n" va permettre de séparer toutes les lignes par un \n.
 
 - int strat_with(char *str1, char *str2) -> Retourne 1 si la string 1 commence par la string 2
 
