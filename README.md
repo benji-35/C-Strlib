@@ -45,4 +45,4 @@ Listes des fonctions et à quoi elles servent:
 
 - void str_to_lower_case(char *str) -> Transforme les lettre majuscule d'une string en lettre minuscule
 
-void free_split(char **split)
+- void free_split(char **split) -> Vide le split de la mémoire
