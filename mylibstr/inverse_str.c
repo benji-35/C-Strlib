@@ -5,17 +5,18 @@
 ** inverse_str
 */
 
+#include <stdlib.h>
 int lenght(char *str);
 
-void inverse_str(char **str)
+void reverse_str(char **str)
 {
-    char *st = *str;
-    int size = lenght(st);
+    if (str == NULL)
+        return;
+    int size = lenght(*str);
     char tampon = 0;
     for (int i = 0; i < size / 2; i++) {
-        tampon = st[i];
-        st[i] = st[size - i];
-        st[size - i] = tampon;
+        tampon = (*str)[i];
+        (*str)[i] = (*str)[(size - 1) - i];
+        (*str)[(size - 1) - i] = tampon;
     }
-    *str = st;
 }

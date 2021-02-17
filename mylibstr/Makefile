@@ -25,7 +25,8 @@ SRC = concat_str.c	\
 	remove_first_char.c	\
 	char_is_an.c	\
 	empty_str.c	\
-	double_to_str.c
+	double_to_str.c	\
+	str_to_double.c
 
 OBJ = $(SRC:.c=.o)
 

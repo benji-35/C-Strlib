@@ -5,17 +5,27 @@
 ** str_to_int
 */
 
-int lenght(unsigned char *str);
+#include <stdlib.h>
+int lenght(char *str);
 
-int str_to_int(unsigned char *str)
+static int my_is_number(char c)
 {
-    int size = lenght(str);
-    int result = 0;
+    if (c >= '0' && c <= '9')
+        return (1);
+    return (0);
+}
 
-    for (int i = 0; i < size; i++) {
-        if (str[i] < 48 || str[i] > 57)
-            return (result);
-        result = (result * 10) + str[i] - 48;
-    }
-    return (result);
+int str_to_int(char *str)
+{
+    if (str == NULL)
+        return (0);
+    int res = 0;
+    int start = 0;
+    if (str[0] == '-')
+        start = 1;
+    for (int i = start; my_is_number(str[i]); i++)
+        res = (res * 10) + (str[i] - 48);
+    if (start)
+        res = res * -1;
+    return (res);
 }

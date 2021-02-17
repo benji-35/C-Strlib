@@ -31,5 +31,7 @@ void str_rm_occhar(char **str, char c);
 int is_alphanumeric(char c);
 char *empty_str(void);
 char *double_to_str(double f, int precision);
+double str_to_double(char *str);
+void reverse_str(char **str);
 
 #endif /* !MYSTR_H_ */
