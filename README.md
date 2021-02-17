@@ -1,9 +1,6 @@
 # C-Strlib
 Create my own str lib
 
-# TO-DO
-str_get_world
-
 # INFORMATIONS
 Listes des fonctions et à quoi elles servent:
 
