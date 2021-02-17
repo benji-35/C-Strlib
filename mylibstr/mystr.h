@@ -29,5 +29,7 @@ int str_char_occur(char *str, char c);
 void str_rm_fchar(char **str, char c);
 void str_rm_occhar(char **str, char c);
 int is_alphanumeric(char c);
+char *empty_str(void);
+char *double_to_str(double f, int precision);
 
 #endif /* !MYSTR_H_ */
