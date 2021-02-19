@@ -33,5 +33,7 @@ char *empty_str(void);
 char *double_to_str(double f, int precision);
 double str_to_double(char *str);
 void reverse_str(char **str);
+void add_line_text(char ***text, int pos);
+void add_str_text(char ***text, int pos, char *str);
 
 #endif /* !MYSTR_H_ */
