@@ -10,6 +10,7 @@ int lenght_split(char **split);
 char *copy_str(char *str);
 char *empty_str(void);
 void free_split(char **split);
+int str_contains(char *str1, char *contain);
 
 void remove_line_text(char ***text, int pos)
 {
@@ -32,4 +33,15 @@ void remove_line_text(char ***text, int pos)
     new_text[size - 1] = NULL;
     free_split(*text);
     *text = new_text;
+}
+
+void remove_line_text_string(char ***text, char *str)
+{
+    for (int i = 0; (*text)[i] != NULL; i++) {
+        if (str_contains((*text)[i], str)) {
+            remove_line_text(text, i);
+            remove_line_text_string(text, str);
+            break;
+        }
+    }
 }

@@ -53,3 +53,5 @@ Listes des fonctions et à quoi elles servent:
 - void add_str_text(char ***text, int pos, char *str) -> Appelle la fonction add_line_text et ajoute la string à la position indiquée.
 
 - void remove_line_text(char ***text, int pos) -> Supprime une ligne du texte depuis la position donnée. Elle free la string à cette position.
+
+- void remove_line_text_string(char ***text, char *str) -> Supprime toutes les lignes du text qui contiennent la char *str
