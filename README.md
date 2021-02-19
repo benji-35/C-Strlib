@@ -51,3 +51,5 @@ Listes des fonctions et à quoi elles servent:
 - void add_line_text(char ***text, int pos) -> Ajoute une ligne dans un texte (char **) à la position donné. si la position est supérieure à la taille du text alors la ligne sera rajouté à la fin. Si la position est inférieur à 0 alors la ligne sera ajouté au début
 
 - void add_str_text(char ***text, int pos, char *str) -> Appelle la fonction add_line_text et ajoute la string à la position indiquée.
+
+- void remove_line_text(char ***text, int pos) -> Supprime une ligne du texte depuis la position donnée. Elle free la string à cette position.

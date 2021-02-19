@@ -18,15 +18,15 @@ void add_line_text(char ***text, int pos)
     int size = lenght_split(*text);
     char **new_text = malloc(sizeof(char *) * (size + 2));
 
-    if (pos > size)
+    if (pos >= size)
         pos = size;
-    if (pos < 0)
+    if (pos <= 0)
         pos = 0;
     for (int i = 0; i < pos; i++)
         new_text[i] = copy_str((*text)[i]);
-    new_text[pos] = empty_str();
     for (int i = pos; i < size; i++)
         new_text[i + 1] = copy_str((*text)[i]);
+    new_text[pos] = empty_str();
     new_text[size + 1] = NULL;
     free_split(*text);
     *text = new_text;
@@ -34,6 +34,14 @@ void add_line_text(char ***text, int pos)
 
 void add_str_text(char ***text, int pos, char *str)
 {
+    if (text == NULL)
+        return;
+    int size = lenght_split(*text);
+    if (pos >= size)
+        pos = size;
+    if (pos <= 0)
+        pos = 0;
     add_line_text(text, pos);
-    (*text)[pos] = str;
+    free((*text)[pos]);
+    (*text)[pos] = copy_str(str);
 }

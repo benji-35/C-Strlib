@@ -35,5 +35,6 @@ double str_to_double(char *str);
 void reverse_str(char **str);
 void add_line_text(char ***text, int pos);
 void add_str_text(char ***text, int pos, char *str);
+void remove_line_text(char ***text, int pos);
 
 #endif /* !MYSTR_H_ */
