@@ -10,6 +10,10 @@ Listes des fonctions et à quoi elles servent:
 
 - char *copy_str(char *str) -> retourne une nouvelle string ayant le même contenue que la string en paramètre.
 
+- char *copy_str_fp(char *str, int pos) -> Retourne la copie de la string "str" depuis la position pos. Si jamais la position dans la string est supérieur à sa taille, la fonctione retourne NULL.
+
+- char *copy_str_tp(char *str, int pos) -> Retroune la copie de la string "str" du début a la position pos. Si la position est inférieur ou égale à 0 alors la fonction retourne NULL. Si la position est supérieur à la taille de la string alors la fonction retournera la copie de la string totale.
+
 - int str_equality(char *str1, char *str2) -> retourne 1 si les 2 strings sont exactement pareil. retourne 0 si ce n'est pas le cas.
 
 - int finish_with(char *str1, char *str2) -> retourne 1 si la string 1 finit par la string 2.
