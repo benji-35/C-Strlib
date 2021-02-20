@@ -37,5 +37,6 @@ void add_line_text(char ***text, int pos);
 void add_str_text(char ***text, int pos, char *str);
 void remove_line_text(char ***text, int pos);
 void remove_line_text_string(char ***text, char *str);
+void add_char_str(char **str, char c);
 
 #endif /* !MYSTR_H_ */

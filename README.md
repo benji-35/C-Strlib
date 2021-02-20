@@ -62,5 +62,11 @@ Listes des fonctions et à quoi elles servent:
 
 - void remove_line_text_string(char ***text, char *str) -> Supprime toutes les lignes du text qui contiennent la char *str
 
+- void add_char_str(char **str, char c) -> Ajout d'un char "c" à la fin de la string "str" (pointeur sur la string)
+
+- void add_char_strp(char **str, char c, int pos) -> Ajout d'un char "c" à la position "pos" dans la string "str" (pointeur sur la string). Si jamais la position est inférieur à 0 alors la position est remise à 0. Si la position est supérieur à la taille de la string alors le char sera ajouté à la fin de la string.
+
+- void remove_char_str(char **str, int pos) -> Suppression d'un char à la position "pos" dans la string "str" (pointeur sur la string). Si la position est inférieur à 0 ou suppérieur à la taille de la string alors aucune modifiactions ne sera effectuées.
+
 # INFORMATIONS
 Toutes les string ou char ** généré par les fonctions de cette lib doivent être free. Soit par la fonction free_split pour un char ** soit par la fonction free la lib stdlib.h pour un char *.
