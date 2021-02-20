@@ -48,7 +48,9 @@ Listes des fonctions et à quoi elles servent:
 
 - void free_split(char **split) -> Vide le split de la mémoire
 
-- void empty_str(void) -> Retourne un string vide
+- char *empty_str(void) -> Retourne une string vide
+
+- char *empty_str_size(int size) -> Retourne une string vide avec une taille donnée
 
 - char *double_to_str(double f, int precision) -> Retourne un double en string avec un nombre définie de chiffre après la virgule (int precision entre 0 et 7)
 
