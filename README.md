@@ -1,7 +1,7 @@
 # C-Strlib
 Create my own str lib
 
-# INFORMATIONS
+# LISTE DES FONCTIONS
 Listes des fonctions et à quoi elles servent:
 
 - char *concat_str(char *str1, char *str2) -> Permet d'ajouter la str2 dans la str1 et retourne le resultat.
@@ -61,3 +61,6 @@ Listes des fonctions et à quoi elles servent:
 - void remove_line_text(char ***text, int pos) -> Supprime une ligne du texte depuis la position donnée. Elle free la string à cette position.
 
 - void remove_line_text_string(char ***text, char *str) -> Supprime toutes les lignes du text qui contiennent la char *str
+
+# INFORMATIONS
+Toutes les string ou char ** généré par les fonctions de cette lib doivent être free. Soit par la fonction free_split pour un char ** soit par la fonction free la lib stdlib.h pour un char *.
