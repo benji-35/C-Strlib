@@ -1,5 +1,5 @@
 # C-Strlib
-Create my own str lib
+Librairie sur les chaînes de caractères
 
 # LISTE DES FONCTIONS
 Listes des fonctions et à quoi elles servent:
