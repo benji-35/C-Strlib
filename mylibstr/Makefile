@@ -29,7 +29,8 @@ SRC = concat_str.c	\
 	str_to_double.c	\
 	add_line_text.c	\
 	remove_line_text.c	\
-	add_char_str.c
+	add_char_str.c	\
+	remove_str_text.c
 
 OBJ = $(SRC:.c=.o)
 

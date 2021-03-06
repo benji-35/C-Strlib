@@ -28,7 +28,7 @@ Listes des fonctions et à quoi elles servent:
 
 - int str_char_occur(char *str, char c) -> Compte le nombre d'occurence d'un char dans une string et retourne le résultat. Si la string est NULL alors la fonction retourne 0.
 
-- void str_rm_fchar(char **str, char c) -> Supprime la première occurence d'un char dans une string (pointeur sur la string est demandé en argument).
+- void str_rm_fochar(char **str, char c) -> Supprime la première occurence d'un char dans une string (pointeur sur la string est demandé en argument).
 
 - void str_rm_occhar(char **str, char c) -> Supprime toutes les occurences d'un char dans une string (pointeur sur la string est demandé en argument).
 
@@ -67,6 +67,12 @@ Listes des fonctions et à quoi elles servent:
 - void add_char_strp(char **str, char c, int pos) -> Ajout d'un char "c" à la position "pos" dans la string "str" (pointeur sur la string). Si jamais la position est inférieur à 0 alors la position est remise à 0. Si la position est supérieur à la taille de la string alors le char sera ajouté à la fin de la string.
 
 - void remove_char_str(char **str, int pos) -> Suppression d'un char à la position "pos" dans la string "str" (pointeur sur la string). Si la position est inférieur à 0 ou suppérieur à la taille de la string alors aucune modifiactions ne sera effectuées.
+
+- int str_contain_pos(char *str1, char *contain) -> Retourne la position dans la string "str1" de la string "str2". Si la string "str1" ne contient pas la string "str2" alors la fonction retourne -1.
+
+- void str_rm_fchar(char **str) -> Supprimer le premier caractère de la string str (pointeur de la string).
+
+- void remove_all_ostr_text(char **text, char *str) -> Supprimer toutes les occurences d'une string dans un texte.
 
 # INFORMATIONS
 Toutes les string ou char ** généré par les fonctions de cette lib doivent être free. Soit par la fonction free_split pour un char ** soit par la fonction free la lib stdlib.h pour un char *.

@@ -31,7 +31,7 @@ void str_rm_occhar(char **str, char c)
     *str = result;
 }
 
-void str_rm_fchar(char **str, char c)
+void str_rm_fochar(char **str, char c)
 {
     int size = lenght(*str);
     char *result;
@@ -48,6 +48,19 @@ void str_rm_fchar(char **str, char c)
             curr++;
         }
     }
+    free(*str);
+    *str = result;
+}
+
+void str_rm_fchar(char **str)
+{
+    if (str == NULL || *str == NULL)
+        return;
+    int size = lenght(*str);
+    char *result = malloc(sizeof(char) * size);
+    for (int i = 1; i < size; i++)
+        result[i - 1] = (*str)[i];
+    result[size - 1] = 0;
     free(*str);
     *str = result;
 }

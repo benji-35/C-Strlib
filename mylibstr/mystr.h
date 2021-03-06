@@ -26,7 +26,7 @@ void free_split(char **split);
 char **get_world(char *str);
 void insert_char_str(char **str, int position, char c);
 int str_char_occur(char *str, char c);
-void str_rm_fchar(char **str, char c);
+void str_rm_fochar(char **str, char c);
 void str_rm_occhar(char **str, char c);
 int is_alphanumeric(char c);
 char *empty_str(void);
@@ -38,5 +38,9 @@ void add_str_text(char ***text, int pos, char *str);
 void remove_line_text(char ***text, int pos);
 void remove_line_text_string(char ***text, char *str);
 void add_char_str(char **str, char c);
+int str_contain_pos(char *str1, char *contain);
+void str_rm_fchar(char **str);
+void str_rm_pchar(char **str, int pos);
+void remove_all_ostr_text(char **text, char *str);
 
 #endif /* !MYSTR_H_ */
