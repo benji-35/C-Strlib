@@ -68,11 +68,8 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
 | 17 |     empty_str_size    |       int size      |     string     | Return an empty string with size  give in argument|
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 18 |      str_equality     |     string str1     |       int      | Return 1 if str1 and str2 are equals|
-|    |                       |     string str2     |                |                                     |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 19 |       finish_with     |     string str1     |       int      | Return 1 if str1 finish with str2   |
-|    |                       |     string str2     |                |                                     |
+| 18 |      str_equality     |     string str1  string str2   |       int      | Return 1 if str1 and str2 are equals|
+| 19 |       finish_with     |     string str1  string str2     |       int      | Return 1 if str1 finish with str2   |
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
 | 20 |       free_split      |      text split     |      void      | Free the text                       |
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
