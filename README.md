@@ -8,6 +8,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
     -Modifier "PATH_HEADER" pour l'emplacement du fichier .h
 
 Étape 2 "Ajouter la lib a la compilation de son projet":
+    -Compiler la librairie avec la commande : "make re" dans le dossier mylibstr
     -Ajouter à la commande de compilation : -L <Emplacement de la librairie> -lkapstr
 
 Étape 3 "Appler les fonctions de la librairie":
