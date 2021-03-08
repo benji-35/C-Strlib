@@ -9,7 +9,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 
 Étape 2 "Ajouter la lib a la compilation de son projet":
     -Compiler la librairie avec la commande : "make re" dans le dossier mylibstr
-    -Ajouter à la commande de compilation : -L <Emplacement de la librairie> -lkapstr
+    -Ajouter à la commande de compilation : -L "Emplacement de la librairie" -lkapstr
 
 Étape 3 "Appler les fonctions de la librairie":
     -Écrire en haut de votre code #include "mystr.h"
