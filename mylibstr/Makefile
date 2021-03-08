@@ -31,7 +31,9 @@ SRC = concat_str.c	\
 	remove_line_text.c	\
 	add_char_str.c	\
 	remove_str_text.c	\
-	replace_str_char.c
+	replace_str_char.c	\
+	split_to_str.c	\
+	insert_str_str.c
 
 OBJ = $(SRC:.c=.o)
 
