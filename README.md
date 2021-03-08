@@ -19,68 +19,28 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 
 | N° |     Name function     |      Arguments      |  Value return  |            description              |
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|  1 |     add_char_str      |     string *str     |      void      | add a char at the end of string     |
-|    |                       |       char c        |                |                                     |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|    |                       |     string *str     |                | add a char at the end of string at  |
-|  2 |     add_char_strp     |       char c        |      void      | specific position                   |
-|    |                       |      int pos        |                |                                     |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|  3 |    remove_char_str    |     string *str     |      void      | remove a caracter at specific       |
-|    |                       |      int pos        |                | position                            |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|    |                       |       text *txt     |                | insert the string in text at        |
-|  4 |      add_str_text     |        int pos      |      void      | specific line.                      |
-|    |                       |       string str    |                |                                     |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
+|  1 |     add_char_str      |     string *str    char c|      void      | add a char at the end of string     |
+|  2 |     add_char_strp     |     string *str    char c    int pos|      void      | add a char at the end of string at specific position|
+|  3 |    remove_char_str    |     string *str    int pos|      void      | remove a caracter at specific position|
+|  4 |      add_str_text     |       text *txt    int pos    string str|      void      | insert the string in text at specific line.|
 |  5 |     add_line_text     |       text *txt     |      void      | add a new empty line in text        |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|  6 |     add_line_ptext    |       text *txt     |      void      | add new empty line at specific      |
-|    |                       |        int pos      |                | position in text                    |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
+|  6 |     add_line_ptext    |       text *txt    int pos|      void      | add new empty line at specific position in text|
 |  7 |       nb_o_split      |       text *txt     |       int      | Return the number of \0 in text     |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|  8 |    is_alphanumeric    |        char c       |       int      | Return 1 if char is alphanumeric or |
-|    |                       |                     |                | 0 it's not an alphanurmeric char    |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|  9 |       concat_str      |      string str1    |     string     | Concat string 2 with string 1 and   |
-|    |                       |      string str2    |                | return the result                   |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 10 |      str_contains     |      string str     |       int      | Return 1 if str contain the content |
-|    |                       |    string contain   |                | of contain otherwise it return 0    |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|    |                       |      string str     |                | Return the position of the first    |
-| 11 |    str_contain_pos    |    string contain   |       int      | string occurence. if there is no    |
-|    |                       |                     |                | occurence then NULL is return       |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
+|  8 |    is_alphanumeric    |        char c       |       int      | Return 1 if char is alphanumeric or 0 it's not an alphanurmeric char|
+|  9 |       concat_str      |      string str1    string str2|     string     | Concat string 2 with string 1 and return the result|
+| 10 |      str_contains     |      string str    string contain|       int      | Return 1 if str contain the content of contain otherwise it return 0|
+| 11 |    str_contain_pos    |      string str    string contain|       int      | Return the position of the first string occurence. if there is no occurence then NULL is return|
 | 12 |       copy_str        |      string str     |     string     | Return a copy of string             |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 13 |      copy_str_fp      |      string str     |     string     | Return a copy of string from a      |
-|    |                       |       int pos       |                | position                            |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 14 |      copy_str_tp      |      string str     |     string     | Return a copy of string from the    |
-|    |                       |       int pos       |                | begining to the position            |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 15 |     double_to_str     |       double f      |     string     | Return a double in string with      |
-|    |                       |    int precision    |                | precision number after coma         |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
+| 13 |      copy_str_fp      |      string str    int pos|     string     | Return a copy of string from a position|
+| 14 |      copy_str_tp      |      string str    int pos|     string     | Return a copy of string from the begining to the position|
+| 15 |     double_to_str     |       double f    int precision  |     string     | Return a double in string with precision number after coma|
 | 16 |       empty_str       |         void        |     string     | Return an empty string with only \0 |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
 | 17 |     empty_str_size    |       int size      |     string     | Return an empty string with size  give in argument|
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 18 |      str_equality     |     string str1  string str2   |       int      | Return 1 if str1 and str2 are equals|
-| 19 |       finish_with     |     string str1  string str2     |       int      | Return 1 if str1 finish with str2   |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
+| 18 |      str_equality     |     string str1      string str2   |       int      | Return 1 if str1 and str2 are equals|
+| 19 |       finish_with     |     string str1      string str2     |       int      | Return 1 if str1 finish with str2   |
 | 20 |       free_split      |      text split     |      void      | Free the text                       |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|    |                       |      string *str    |                | Add a char at the position in the   |
-| 21 |    insert_char_str    |      int position   |      void      | string                              |
-|    |                       |         char c      |                |                                     |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-|    |                       |      string *str    |                | Add a string at the position in the |
-| 22 |      insert_str_s     |   string to_insert  |      void      | string str                          |
-|    |                       |        int pos      |                |                                     |
-|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
+| 21 |    insert_char_str    |      string *str   int position    char c |                | Add a char at the position in the string |
+| 22 |      insert_str_s     |      string *str    string to_insert    int pos|      void      | Add a string at the position in the string str |
 | 23 |       int_to_str      |        int nb       |     string     | Return int in string                |
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
 | 24 |       reverse_str     |      string *str    |      void      | Reverse the string                  |
