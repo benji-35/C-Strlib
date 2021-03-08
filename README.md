@@ -1,6 +1,19 @@
 # C-Strlib
 Librairie complète sur les strings en constante mise à jour pour avoir le plus de fonctions utiles avec une utilisation simplifiée.
 
+# UTILISATION
+Étape 1 "Modifier l'emplacement de la lib et du .h à la compilation":
+    -Aller dans le makefile
+    -Modifier "PATH_LIB" pour l'emplacement de la librairie (.a)
+    -Modifier "PATH_HEADER" pour l'emplacement du fichier .h
+
+Étape 2 "Ajouter la lib a la compilation de son projet":
+    -Ajouter à la commande de compilation : -L <Emplacement de la librairie> -lkapstr
+
+Étape 3 "Appler les fonctions de la librairie":
+    -Écrire en haut de votre code #include "mystr.h"
+    -Appellez la fonction souhaité
+
 # LISTE DES FONCTIONS
 Listes des fonctions et à quoi elles servent:
 

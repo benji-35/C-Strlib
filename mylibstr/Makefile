@@ -37,7 +37,7 @@ SRC = concat_str.c	\
 
 OBJ = $(SRC:.c=.o)
 
-NAME = libmystr.a
+NAME = libkapstr.a
 
 HEADER = mystr.h
 
