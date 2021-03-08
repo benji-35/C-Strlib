@@ -6,8 +6,9 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str)
+int lenght(string str)
 {
     int r = 0;
 
@@ -18,7 +19,7 @@ int lenght(char *str)
     return(r);
 }
 
-int lenght_split(char **split)
+int lenght_split(text split)
 {
     int r = 0;
 

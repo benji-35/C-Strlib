@@ -5,9 +5,9 @@
 ** equal_str
 */
 
-int lenght(char *str);
+#include "mystr.h"
 
-int str_equality(char *str1, char *str2)
+int str_equality(string str1, string str2)
 {
     int s1 = lenght(str1);
 

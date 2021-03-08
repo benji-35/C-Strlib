@@ -6,13 +6,12 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str);
-
-char *copy_str(char *str)
+string copy_str(string str)
 {
     int size = lenght(str);
-    char *result = malloc(sizeof(char) * (size + 1));
+    string result = malloc(sizeof(char) * (size + 1));
 
     for (int i = 0; i < size; i++)
         result[i] = str[i];
@@ -20,28 +19,28 @@ char *copy_str(char *str)
     return (result);
 }
 
-char *copy_str_fp(char *str, int pos)
+string copy_str_fp(string str, int pos)
 {
     int size = lenght(str);
     if (size <= pos)
         return (NULL);
     if (pos < 0)
         pos = 0;
-    char *cpy = malloc(sizeof(char) * ((size - pos) + 1));
+    string cpy = malloc(sizeof(char) * ((size - pos) + 1));
     for (int i = pos; i < size; i++)
         cpy[i - pos] = str[i];
     cpy[size - pos] = 0;
     return (cpy);
 }
 
-char *copy_str_tp(char *str, int pos)
+string copy_str_tp(string str, int pos)
 {
     if (pos <= 0)
         return (NULL);
     int size = lenght(str);
     if (pos >= size)
         pos = size - 1;
-    char *cpy = malloc(sizeof(char) * (pos + 1));
+    string cpy = malloc(sizeof(char) * (pos + 1));
     for (int i = 0; i < pos; i++)
         cpy[i] = str[i];
     cpy[pos] = 0;

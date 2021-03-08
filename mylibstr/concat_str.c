@@ -6,10 +6,11 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
 int lenght(char *str);
 
-char *concat_str(char *str1, char *str2)
+string concat_str(string str1, string str2)
 {
     int s1 = lenght(str1);
     int s2 = lenght(str2);

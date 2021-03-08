@@ -6,41 +6,37 @@
 */
 
 #include <stdlib.h>
-int lenght_split(char **split);
-char *copy_str(char *str);
-char *empty_str(void);
-void free_split(char **split);
-int str_contains(char *str1, char *contain);
+#include "mystr.h"
 
-void remove_line_text(char ***text, int pos)
+void remove_line_text(text *txt, int pos)
 {
-    if (*text == NULL)
+    if (*txt == NULL)
         return;
-    int size = lenght_split(*text);
+    int size = lenght_split(*txt);
     int curr = 0;
     if (pos < 0)
         pos = 0;
     if (pos >= size)
         pos = size - 1;
-    char **new_text = malloc(sizeof(char *) * (size));
+    text new_text = malloc(sizeof(char *) * (size));
     for (int i = 0; i < size; i++) {
         if (i == pos) {
             curr++;
         } else {
-            new_text[i - curr] = copy_str((*text)[i]);
+            new_text[i - curr] = copy_str((*txt)[i]);
         }
     }
     new_text[size - 1] = NULL;
-    free_split(*text);
-    *text = new_text;
+    free_split(*txt);
+    *txt = new_text;
 }
 
-void remove_line_text_string(char ***text, char *str)
+void remove_line_text_string(text *txt, char *str)
 {
-    for (int i = 0; (*text)[i] != NULL; i++) {
-        if (str_contains((*text)[i], str)) {
-            remove_line_text(text, i);
-            remove_line_text_string(text, str);
+    for (int i = 0; (*txt)[i] != NULL; i++) {
+        if (str_contains((*txt)[i], str)) {
+            remove_line_text(txt, i);
+            remove_line_text_string(txt, str);
             break;
         }
     }

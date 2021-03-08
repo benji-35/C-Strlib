@@ -6,13 +6,9 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str);
-char *empty_str(void);
-char *copy_str(char *str);
-void insert_char_str(char **str, int position, char c);
-
-static int nb_o(char *str, int size)
+static int nb_o(string str, int size)
 {
     int res = 0;
     for (int i = 0; i < size; i++) {
@@ -23,7 +19,7 @@ static int nb_o(char *str, int size)
     return (res);
 }
 
-static void delete_o(char **str)
+static void delete_o(string *str)
 {
     int size = lenght(*str);
     int nb = nb_o(*str, size);
@@ -37,7 +33,7 @@ static void delete_o(char **str)
     *str = new_str;
 }
 
-static void add_double_coma(double d, char **str, int precision)
+static void add_double_coma(double d, string *str, int precision)
 {
     for (int i = 0; i < precision; i++)
         d = d * 10.0;
@@ -63,7 +59,7 @@ static void neg_double(int *neg, double *nb)
     }
 }
 
-char *double_to_str(double f, int precision)
+string double_to_str(double f, int precision)
 {
     int neg = 0;
     precision++;

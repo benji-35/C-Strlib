@@ -6,10 +6,9 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str);
-
-void add_char_str(char **str, char c)
+void add_char_str(string *str, char c)
 {
     int size = lenght(*str);
     char *new_str = malloc(sizeof(char) * (size + 2));
@@ -22,7 +21,7 @@ void add_char_str(char **str, char c)
     *str = new_str;
 }
 
-void add_char_strp(char **str, char c, int pos)
+void add_char_strp(string *str, char c, int pos)
 {
     int size = lenght(*str);
     char *new_str;
@@ -42,7 +41,7 @@ void add_char_strp(char **str, char c, int pos)
     *str = new_str;
 }
 
-void remove_char_str(char **str, int pos)
+void remove_char_str(string *str, int pos)
 {
     int size = lenght(*str);
     if (pos < 0 || pos >= size)

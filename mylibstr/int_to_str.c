@@ -6,6 +6,7 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
 static int size_nb(int nb)
 {
@@ -20,11 +21,11 @@ static int size_nb(int nb)
     return (r);
 }
 
-char *int_to_str(int nb)
+string int_to_str(int nb)
 {
     int size = size_nb(nb);
     float nb_f = (float)nb;
-    char *result = malloc(sizeof(char) * (size + 1));
+    string result = malloc(sizeof(char) * (size + 1));
     for (int i = size - 1; i >= 0; i--) {
         result[i] = (nb % 10) + 48;
         nb = nb / 10;

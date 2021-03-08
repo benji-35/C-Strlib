@@ -6,7 +6,7 @@
 */
 
 #include <stdlib.h>
-int str_equality(char *str1, char *str2);
+#include "mystr.h"
 
 int is_alphanumeric(char c)
 {
@@ -19,7 +19,7 @@ int is_alphanumeric(char c)
     return (0);
 }
 
-int nb_o_split(char **str)
+int nb_o_split(string *str)
 {
     int r = 0;
     for (int i = 0; str[i] != NULL; i++) {

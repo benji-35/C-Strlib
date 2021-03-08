@@ -6,7 +6,7 @@
 */
 
 #include <stdlib.h>
-int lenght(char *str);
+#include "mystr.h"
 
 static int my_is_number(char c)
 {
@@ -15,7 +15,7 @@ static int my_is_number(char c)
     return (0);
 }
 
-int str_to_int(char *str)
+int str_to_int(string str)
 {
     if (str == NULL)
         return (0);

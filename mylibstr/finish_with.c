@@ -5,9 +5,9 @@
 ** finish_with
 */
 
-int lenght(char *str);
+#include "mystr.h"
 
-int finish_with(char *str1, char *str2)
+int finish_with(string str1, string str2)
 {
     int s1 = lenght(str1);
     int s2 = lenght(str2);

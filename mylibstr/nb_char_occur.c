@@ -6,8 +6,9 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int str_char_occur(char *str, char c)
+int str_char_occur(string str, char c)
 {
     int r = 0;
 

@@ -6,9 +6,9 @@
 */
 
 #include <stdlib.h>
-int lenght(char *str);
+#include "mystr.h"
 
-void reverse_str(char **str)
+void reverse_str(string *str)
 {
     if (str == NULL)
         return;

@@ -5,9 +5,9 @@
 ** contain_str
 */
 
-int lenght(char *str);
+#include "mystr.h"
 
-int str_contains(char *str1, char *contain)
+int str_contains(string str1, char *contain)
 {
     int s1 = lenght(str1);
     int curr = 0;
@@ -25,7 +25,7 @@ int str_contains(char *str1, char *contain)
     return (0);
 }
 
-int str_contain_pos(char *str1, char *contain)
+int str_contain_pos(string str1, string contain)
 {
     int s1 = lenght(str1);
     int curr = 0;

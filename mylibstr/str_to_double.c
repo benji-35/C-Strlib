@@ -6,18 +6,13 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str);
-char **split_str(char *str, char spliter);
-int str_to_int(char *str);
-int lenght_split(char **split);
-void free_split(char **split);
-
-double str_to_double(char *str)
+double str_to_double(string str)
 {
     if (str == NULL)
         return (0);
-    char **split = split_str(str, '.');
+    text split = split_str(str, '.');
     int a = str_to_int(split[0]);
     int b = 0;
     double b_b = 0.0;

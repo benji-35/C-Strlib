@@ -6,15 +6,12 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str);
-char *concat_str(char *str1, char *str2);
-char *copy_str(char *str);
-
-char *split_to_str(char **split, char *separator)
+string text_to_str(text split, string separator)
 {
-    char *str = NULL;
-    char *tampon = NULL;
+    string str = NULL;
+    string tampon = NULL;
     for (int i = 0; split[i] != NULL; i++) {
         tampon = concat_str(str, split[i]);
         free(str);

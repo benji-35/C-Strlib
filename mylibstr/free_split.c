@@ -6,8 +6,9 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-void free_split(char **split)
+void free_split(text split)
 {
     int u = 0;
     for (int i = 0; split[i] != NULL; i++) {

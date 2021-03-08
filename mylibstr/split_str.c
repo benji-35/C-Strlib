@@ -6,10 +6,9 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str);
-
-static int nb_split(char *str, char splitter)
+static int nb_split(string str, char splitter)
 {
     int size = lenght(str);
     int result = 0;
@@ -23,7 +22,7 @@ static int nb_split(char *str, char splitter)
     return (result);
 }
 
-static int size_before_splitter(char *str, char splitter)
+static int size_before_splitter(string str, char splitter)
 {
     int i = 0;
     while (str[i] != 0) {
@@ -34,18 +33,18 @@ static int size_before_splitter(char *str, char splitter)
     return (i);
 }
 
-static void complete_str_split(char *str, int size, char *result)
+static void complete_str_split(string str, int size, string result)
 {
     for (int i = 0; i < size; i++)
         result[i] = str[i];
     result[size] = 0;
 }
 
-char **split_str(char *str, char spliter)
+text split_str(string str, char spliter)
 {
     int size = lenght(str);
     int nbsplit = nb_split(str, spliter);
-    char **result = malloc(sizeof(char *) * (nbsplit + 2));
+    text result = malloc(sizeof(char *) * (nbsplit + 2));
     int curr = 0;
     for (int i = 0; i < size; i++) {
         int to_mal = size_before_splitter(str + i, spliter);

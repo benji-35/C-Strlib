@@ -6,15 +6,14 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int lenght(char *str);
-
-void insert_char_str(char **str, int position, char c)
+void insert_char_str(string *str, int position, char c)
 {
     int size = lenght(*str);
     if (position > size)
         return;
-    char *new_str = malloc(sizeof(char) * (size + 2));
+    string new_str = malloc(sizeof(char) * (size + 2));
     for (int i = 0; i < position; i++)
         new_str[i] = (*str)[i];
     for (int i = position; i < size; i++)

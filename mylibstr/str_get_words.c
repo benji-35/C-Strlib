@@ -6,16 +6,11 @@
 */
 
 #include <stdlib.h>
+#include "mystr.h"
 
-int is_alphanumeric(char c);
-int lenght(char *str);
-int nb_o_split(char **str);
-int lenght_split(char **split);
-int str_equality(char *str1, char *str2);
-char *copy_str(char *str);
-void free_split(char **split);
+int nb_o_split(text txt);
 
-static int nb_split_w(char *str)
+static int nb_split_w(string str)
 {
     int size = lenght(str);
     int result = 0;
@@ -29,7 +24,7 @@ static int nb_split_w(char *str)
     return (result);
 }
 
-static int size_before_splitterw(char *str)
+static int size_before_splitterw(string str)
 {
     int i = 0;
     while (str[i] != 0) {
@@ -40,14 +35,14 @@ static int size_before_splitterw(char *str)
     return (i);
 }
 
-static void complete_str_splitw(char *str, int size, char *result)
+static void complete_str_splitw(string str, int size, string result)
 {
     for (int i = 0; i < size; i++)
         result[i] = str[i];
     result[size] = 0;
 }
 
-static void rm_o_str(char ***txt)
+static void rm_o_str(text *txt)
 {
     int size = lenght_split(*txt);
     int nb_o = nb_o_split(*txt);
@@ -66,11 +61,11 @@ static void rm_o_str(char ***txt)
     *txt = res;
 }
 
-char **get_words(char *str)
+text get_words(string str)
 {
     int size = lenght(str);
     int nbsplit = nb_split_w(str);
-    char **result = malloc(sizeof(char *) * (nbsplit + 2));
+    text result = malloc(sizeof(char *) * (nbsplit + 2));
     int curr = 0;
 
     for (int i = 0; i < size; i++) {
