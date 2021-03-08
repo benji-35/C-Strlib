@@ -76,5 +76,9 @@ Listes des fonctions et à quoi elles servent:
 
 - void remove_all_ostr_text(char **text, char *str) -> Supprimer toutes les occurences d'une string dans un texte.
 
+- void replace_char_text(char **text, char target, char replace) -> remplace toutes les occurences du caractère "target" dans un texte par le caractère "replace".
+
+- void replace_char_str(char *str, char target, char replace) -> remplace toutes les occurences du caractère "target" dans une string par le caractère "replace".
+
 # INFORMATIONS
 Toutes les string ou char ** généré par les fonctions de cette lib doivent être free. Soit par la fonction free_split pour un char ** soit par la fonction free la lib stdlib.h pour un char *.

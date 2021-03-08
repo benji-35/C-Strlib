@@ -43,5 +43,7 @@ int str_contain_pos(char *str1, char *contain);
 void str_rm_fchar(char **str);
 void str_rm_pchar(char **str, int pos);
 void remove_all_ostr_text(char **text, char *str);
+void replace_char_text(char **text, char target, char replace);
+void replace_char_str(char *str, char target, char replace);
 
 #endif /* !MYSTR_H_ */

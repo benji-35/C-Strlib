@@ -30,7 +30,8 @@ SRC = concat_str.c	\
 	add_line_text.c	\
 	remove_line_text.c	\
 	add_char_str.c	\
-	remove_str_text.c
+	remove_str_text.c	\
+	replace_str_char.c
 
 OBJ = $(SRC:.c=.o)
 
