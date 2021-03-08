@@ -66,8 +66,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
 | 16 |       empty_str       |         void        |     string     | Return an empty string with only \0 |
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
-| 17 |     empty_str_size    |       int size      |     string     | Return an empty string with size    |
-|    |                       |                     |                | give in argument                    |
+| 17 |     empty_str_size    |       int size      |     string     | Return an empty string with size  give in argument|
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
 | 18 |      str_equality     |     string str1     |       int      | Return 1 if str1 and str2 are equals|
 |    |                       |     string str2     |                |                                     |
