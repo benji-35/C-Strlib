@@ -12,7 +12,7 @@ int nb_o_split(text txt);
 
 static int nb_split_w(string str)
 {
-    int size = lenght(str);
+    int size = length(str);
     int result = 0;
 
     if (is_alphanumeric(str[size - 1]) == 0)
@@ -44,7 +44,7 @@ static void complete_str_splitw(string str, int size, string result)
 
 static void rm_o_str(text *txt)
 {
-    int size = lenght_split(*txt);
+    int size = length_split(*txt);
     int nb_o = nb_o_split(*txt);
     int curr = 0;
     char **res = malloc(sizeof(char *) * ((size - nb_o) + 1));
@@ -63,7 +63,7 @@ static void rm_o_str(text *txt)
 
 text get_words(string str)
 {
-    int size = lenght(str);
+    int size = length(str);
     int nbsplit = nb_split_w(str);
     text result = malloc(sizeof(char *) * (nbsplit + 2));
     int curr = 0;

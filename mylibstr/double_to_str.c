@@ -21,7 +21,7 @@ static int nb_o(string str, int size)
 
 static void delete_o(string *str)
 {
-    int size = lenght(*str);
+    int size = length(*str);
     int nb = nb_o(*str, size);
     if (nb == 0)
         return;
@@ -75,7 +75,7 @@ string double_to_str(double f, int precision)
     if (neg)
         insert_char_str(&str, 0, '-');
     delete_o(&str);
-    if (str[lenght(str) - 1] == '.')
-        str[lenght(str) - 1] = 0;
+    if (str[length(str) - 1] == '.')
+        str[length(str) - 1] = 0;
     return (str);
 }

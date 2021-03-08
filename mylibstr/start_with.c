@@ -9,8 +9,8 @@
 
 int strat_with(string str1, string str2)
 {
-    int s1 = lenght(str1);
-    int s2 = lenght(str2);
+    int s1 = length(str1);
+    int s2 = length(str2);
     if (s2 > s1)
         return (0);
     for (int i = 0; i < s2; i++) {

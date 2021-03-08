@@ -12,7 +12,7 @@ void remove_line_text(text *txt, int pos)
 {
     if (*txt == NULL)
         return;
-    int size = lenght_split(*txt);
+    int size = length_split(*txt);
     int curr = 0;
     if (pos < 0)
         pos = 0;
@@ -31,7 +31,7 @@ void remove_line_text(text *txt, int pos)
     *txt = new_text;
 }
 
-void remove_line_text_string(text *txt, char *str)
+void remove_line_text_string(text *txt, string str)
 {
     for (int i = 0; (*txt)[i] != NULL; i++) {
         if (str_contains((*txt)[i], str)) {

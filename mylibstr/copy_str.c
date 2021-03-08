@@ -10,7 +10,7 @@
 
 string copy_str(string str)
 {
-    int size = lenght(str);
+    int size = length(str);
     string result = malloc(sizeof(char) * (size + 1));
 
     for (int i = 0; i < size; i++)
@@ -21,7 +21,7 @@ string copy_str(string str)
 
 string copy_str_fp(string str, int pos)
 {
-    int size = lenght(str);
+    int size = length(str);
     if (size <= pos)
         return (NULL);
     if (pos < 0)
@@ -37,7 +37,7 @@ string copy_str_tp(string str, int pos)
 {
     if (pos <= 0)
         return (NULL);
-    int size = lenght(str);
+    int size = length(str);
     if (pos >= size)
         pos = size - 1;
     string cpy = malloc(sizeof(char) * (pos + 1));

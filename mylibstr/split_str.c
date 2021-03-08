@@ -10,7 +10,7 @@
 
 static int nb_split(string str, char splitter)
 {
-    int size = lenght(str);
+    int size = length(str);
     int result = 0;
 
     if (str[size - 1] == splitter)
@@ -42,7 +42,7 @@ static void complete_str_split(string str, int size, string result)
 
 text split_str(string str, char spliter)
 {
-    int size = lenght(str);
+    int size = length(str);
     int nbsplit = nb_split(str, spliter);
     text result = malloc(sizeof(char *) * (nbsplit + 2));
     int curr = 0;

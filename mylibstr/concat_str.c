@@ -8,12 +8,10 @@
 #include <stdlib.h>
 #include "mystr.h"
 
-int lenght(char *str);
-
 string concat_str(string str1, string str2)
 {
-    int s1 = lenght(str1);
-    int s2 = lenght(str2);
+    int s1 = length(str1);
+    int s2 = length(str2);
     char *result = malloc(sizeof(char) * (s1 + s2 + 1));
 
     for (int i = 0; i < s1; i++)

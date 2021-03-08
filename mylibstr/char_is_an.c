@@ -19,7 +19,7 @@ int is_alphanumeric(char c)
     return (0);
 }
 
-int nb_o_split(string *str)
+int nb_o_split(text str)
 {
     int r = 0;
     for (int i = 0; str[i] != NULL; i++) {

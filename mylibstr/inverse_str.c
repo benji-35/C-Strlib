@@ -12,7 +12,7 @@ void reverse_str(string *str)
 {
     if (str == NULL)
         return;
-    int size = lenght(*str);
+    int size = length(*str);
     char tampon = 0;
     for (int i = 0; i < size / 2; i++) {
         tampon = (*str)[i];

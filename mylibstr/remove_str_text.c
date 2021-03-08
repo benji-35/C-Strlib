@@ -9,9 +9,9 @@
 #include "mystr.h"
 
 
-static void remove_ostr_str(string *str, string to_rem)
+void remove_ostr_str(string *str, string to_rem)
 {
-    int size = lenght(to_rem);
+    int size = length(to_rem);
     int index = str_contain_pos(*str, to_rem);
 
     while (index != -1) {

@@ -10,7 +10,7 @@
 
 void add_char_str(string *str, char c)
 {
-    int size = lenght(*str);
+    int size = length(*str);
     char *new_str = malloc(sizeof(char) * (size + 2));
 
     for (int i = 0; i < size; i++)
@@ -23,7 +23,7 @@ void add_char_str(string *str, char c)
 
 void add_char_strp(string *str, char c, int pos)
 {
-    int size = lenght(*str);
+    int size = length(*str);
     char *new_str;
 
     if (pos > size)
@@ -43,7 +43,7 @@ void add_char_strp(string *str, char c, int pos)
 
 void remove_char_str(string *str, int pos)
 {
-    int size = lenght(*str);
+    int size = length(*str);
     if (pos < 0 || pos >= size)
         return;
     char *new_str = malloc(sizeof(char) * (size));

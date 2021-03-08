@@ -2,13 +2,13 @@
 ** EPITECH PROJECT, 2021
 ** mystrlib
 ** File description:
-** lenght_str
+** length_str
 */
 
 #include <stdlib.h>
 #include "mystr.h"
 
-int lenght(string str)
+int length(string str)
 {
     int r = 0;
 
@@ -19,7 +19,7 @@ int lenght(string str)
     return(r);
 }
 
-int lenght_split(text split)
+int length_split(text split)
 {
     int r = 0;
 

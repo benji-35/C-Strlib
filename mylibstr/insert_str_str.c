@@ -10,8 +10,8 @@
 
 void insert_str_s(string *str, string to_insert, int pos)
 {
-    int size_str = lenght(*str);
-    int size_insert = lenght(to_insert);
+    int size_str = length(*str);
+    int size_insert = length(to_insert);
 
     if (str == NULL && to_insert == NULL)
         return;

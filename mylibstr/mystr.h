@@ -11,7 +11,7 @@
 typedef char** text;
 typedef char* string;
 
-int lenght(string str);
+int length(string str);
 int finish_with(string str1, string str2);
 int str_equality(string str1, string str2);
 text split_str(string str, char spliter);
@@ -24,7 +24,7 @@ string concat_str(string str1, string str2);
 string int_to_str(int nb);
 int str_to_int(string str);
 text get_words(string str);
-int lenght_split(text split);
+int length_split(text split);
 void free_split(text split);
 text get_world(string str);
 void insert_char_str(string *str, int position, char c);
@@ -50,5 +50,8 @@ void replace_char_text(text txt, char target, char replace);
 void replace_char_str(string str, char target, char replace);
 string text_to_str(text split, string separator);
 void insert_str_s(string *str, string to_insert, int pos);
+int nb_o_split(text str);
+int is_alphanumeric(char c);
+void remove_ostr_str(string *str, string to_rem);
 
 #endif /* !MYSTR_H_ */

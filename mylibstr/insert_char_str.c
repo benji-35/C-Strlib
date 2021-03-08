@@ -10,7 +10,7 @@
 
 void insert_char_str(string *str, int position, char c)
 {
-    int size = lenght(*str);
+    int size = length(*str);
     if (position > size)
         return;
     string new_str = malloc(sizeof(char) * (size + 2));
