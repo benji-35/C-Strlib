@@ -1,5 +1,5 @@
 # C-Strlib
-Librairie sur les chaînes de caractères
+Librairie complète sur les strings en constante mise à jour pour avoir le plus de fonctions utiles avec une utilisation simplifiée.
 
 # LISTE DES FONCTIONS
 Listes des fonctions et à quoi elles servent:
