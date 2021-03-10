@@ -20,7 +20,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | N° |     Name function     |      Arguments      |  Value return  |            description              |
 |:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
 |  1 |     add_char_str      |     string *str, char c|      void      | add a char at the end of string     |
-|  2 |     add_char_strp     |     string *str, char c, int pos|      void      | add a char at the end of string at specific position|
+|  2 |     add_char_strp     |     string *str, char c, int pos|      void      | add a char at specific position|
 |  3 |    remove_char_str    |     string *str, int pos|      void      | remove a caracter at specific position|
 |  4 |      add_str_text     |       text *txt, int pos, string str|      void      | insert the string in text at specific line.|
 |  5 |     add_line_text     |       text *txt     |      void      | add a new empty line in text        |
@@ -58,13 +58,62 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 37 |   replace_char_text   |       text txt, char target, char replace|      void      | Replace all char equals to target in text to replace value|
 | 38 |       split_str       |      string str, char splitter|      text      | Split text for each splitter position in string and return the text splitted|
 | 39 |      text_to_str      |      text split, string separator|     string     | From text, a string is generate and you can put a separator if you want (separator is nullable)|
-| 39 |      text_to_str      |   string separator  |     string     | you can put a separator if you want (separator is nullable)|
 | 40 |       strat_with      |      string str1, string str2|       int      | Return 1 if str1 start with str2 else function return 0|
 | 41 |       get_words       |       string str    |      text      | Return a list with words of string  |
 | 42 |    str_to_double      |       string str    |     double     | Return double value from double in string|
 | 43 |      str_to_int       |       string str    |       int      | Return int value from int in string |
 | 44 |   str_to_lower_case   |       string str    |      void      | Change all upper case to lower case |
 | 45 |   str_to_upper_case   |       string str    |      void      | Change all lower case to upper case |
+
+# FUNCTION LIST (VERSION FRANÇAISE)
+
+| N° |     Name function     |      Arguments      |  Value return  |            description              |
+|:--:|:---------------------:|:-------------------:|:--------------:|:-----------------------------------:|
+|  1 |     add_char_str      |     string *str, char c|      void      | Ajoute un char à la fin de la string |
+|  2 |     add_char_strp     |     string *str, char c, int pos|      void      | Ajoute un char à une position précise dans la string|
+|  3 |    remove_char_str    |     string *str, int pos|      void      | Supprime un char à une position spécifique|
+|  4 |      add_str_text     |       text *txt, int pos, string str|      void      | Insert une string dans le texte à une ligne spécifique|
+|  5 |     add_line_text     |       text *txt     |      void      | Ajoute une ligne vide à la fin du texte|
+|  6 |     add_line_ptext    |       text *txt, int pos|      void      | Ajoute une ligne vide à une ligne spécifique du texte|
+|  7 |       nb_o_split      |       text *txt     |       int      | Retourne le nombre de \0 dans le texte|
+|  8 |    is_alphanumeric    |        char c       |       int      | Retourne 1 si le char est un caractère alphanumérique sinon la fonction retourne 0|
+|  9 |       concat_str      |      string str1, string str2|     string     | Ajoute la string str2 à la fin de la string str1 et retourne le résultat|
+| 10 |      str_contains     |      string str, string contain|       int      | Retourne 1 si la string str contient la string contain|
+| 11 |    str_contain_pos    |      string str, string contain|       int      | retroune la position de la première occurence de contain dans la string str. Si aucune occurence n'est trouvé alors la fonction retourne -1|
+| 12 |       copy_str        |      string str     |     string     | Retourne la copie de la string str|
+| 13 |      copy_str_fp      |      string str, int pos|     string     | Retourne la copie de la string str depuis la position pos|
+| 14 |      copy_str_tp      |      string str, int pos|     string     | Retourne la copie de la string str jusqu'à la position pos|
+| 15 |     double_to_str     |       double f, int precision  |     string     | Retourne la valeur de la double en string avec precision (int) chiffre après la virgule|
+| 16 |       empty_str       |         void        |     string     | Retourne une string vide ayant la taille 0|
+| 17 |     empty_str_size    |       int size      |     string     | Retourne une string vide ayant la taille demandé|
+| 18 |      str_equality     |     string str1, string str2   |       int      | Retourne 1 si la string 1 est égale à la string 2 sinon la fonction retourne 0|
+| 19 |       finish_with     |     string str1, string str2     |       int      | Retourne 1 si la string 1 finit avec la string 2 sinon la fonction retourne 0|
+| 20 |       free_split      |      text split     |      void      | Free le text|
+| 21 |    insert_char_str    |      string *str, int position, char c |     void     | Ajoute un char à une position dans la string|
+| 22 |      insert_str_s     |      string *str, string to_insert, int pos|      void      | Insert une string dans une string à une position précise|
+| 23 |       int_to_str      |        int nb       |     string     | Retourne un nombre entier en string|
+| 24 |       reverse_str     |      string *str    |      void      | Inverse une string|
+| 25 |        length         |      string str     |       int      | Retourne la taille de la string|
+| 26 |      length_split     |      text split     |       int      | Retourne la taille du texte|
+| 27 |     str_char_occur    |      string str, char c|       int      | Retourne le nombre d'occurences d'un char dans une string|
+| 28 |      str_rm_occhar    |      string *str, char c    |      void      | Supprime toutes les occurences du char dans une string|
+| 29 |      str_rm_fochar    |      string *str, char c|      void      | Supprime la première occurence du char dans une string|
+| 30 |      str_rm_pchar     |      string *str, int pos|      void      | Supprime le char à une position dans une string|
+| 31 |      str_rm_fchar     |      string *str    |      void      | Supprime le premier char dans une string|
+| 32 |    remove_line_text   |       text *txt, int pos|      void      | Supprime la string du texte à la ligne indiquée|
+| 33 |remove_line_text_string|       text *txt, string str|      void      | Supprime toutes les lignes d'un texte qui continnent la string str|
+| 34 |  remove_all_ostr_text |       text txt, string str|      void      | Supprime toutes les occurences de la string str dans le texte|
+| 35 |    remove_ostr_str    |      string *str, string to_ren    |      void      | Supprime toutes les occurences de la string to_ren dans la string str|
+| 36 |    replace_char_str   |      string str, char target, char replace|       void     | Remplace toute les chars ayant la valeur target par la valeur replace dans la string str|
+| 37 |   replace_char_text   |       text txt, char target, char replace|      void      | Remplace toute les chars ayant la valeur target par la valeur replace dans le texte txt|
+| 38 |       split_str       |      string str, char splitter|      text      | Divise la string par rapport aux occurences de splitter dans la string str et en retourne un texte|
+| 39 |      text_to_str      |      text split, string separator|     string     | Depuis un texte créer un string dans laquelle entre chaque ligne on peut rajouter une string|
+| 40 |       strat_with      |      string str1, string str2|       int      | Retroune 1 si la string 1 commence par la string 2|
+| 41 |       get_words       |       string str    |      text      | retourne la liste des mots dans la string str|
+| 42 |    str_to_double      |       string str    |     double     | Passe une valeur double en string à une double|
+| 43 |      str_to_int       |       string str    |       int      | Passe une valeur int en string à un int|
+| 44 |   str_to_lower_case   |       string str    |      void      | Change toutes les majuscules en minuscules|
+| 45 |   str_to_upper_case   |       string str    |      void      | Change toutes les minuscules en majuscules|
 
 # INFORMATIONS
 Toutes les string ou text doivent être free. La variable de type text peut être free par la fonction free_split(text split). La variable de type string doit être free par la fonction free de la lib stdlib.h
