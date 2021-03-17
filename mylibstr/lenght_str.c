@@ -16,7 +16,7 @@ int length(string str)
         return (r);
     while (str[r] != 0)
         r++;
-    return(r);
+    return (r);
 }
 
 int length_split(text split)
