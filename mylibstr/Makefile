@@ -20,7 +20,6 @@ SRC = concat_str.c	\
 	inverse_str.c	\
 	insert_char_str.c	\
 	free_split.c	\
-	insert_char_str.c	\
 	nb_char_occur.c	\
 	remove_first_char.c	\
 	char_is_an.c	\
