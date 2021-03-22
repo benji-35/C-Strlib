@@ -8,6 +8,8 @@
 #ifndef MYSTR_H_
 #define MYSTR_H_
 
+#include <unistd.h>
+
 typedef char** text;
 typedef char* string;
 
@@ -191,5 +193,8 @@ string text_to_str(text split, string separator);
 void insert_str_s(string *str, string to_insert, int pos);
 int nb_o_split(text str);
 void remove_ostr_str(string *str, string to_rem);
+void my_putstr(string str);
+void my_putstr_err(string str);
+ssize_t my_putstr_fd(string str, int fd);
 
 #endif /* !MYSTR_H_ */
