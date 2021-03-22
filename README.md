@@ -64,6 +64,9 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 43 |      str_to_int       |       string str    |       int      | Return int value from int in string |
 | 44 |   str_to_lower_case   |       string str    |      void      | Change all upper case to lower case |
 | 45 |   str_to_upper_case   |       string str    |      void      | Change all lower case to upper case |
+| 46 |   my_putstr   |       string str    |      void      | display string in output 1 (terminal) |
+| 47 |   my_putstr_err   |       string str    |      void      | display string in output 2 (terminal) |
+| 48 |   my_putstr_fd   |       string str, int fd    |      ssize_t      | display string in output fd and return result |
 
 # FUNCTION LIST (VERSION FRANÇAISE)
 
@@ -114,6 +117,9 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 43 |      str_to_int       |       string str    |       int      | Passe une valeur int en string à un int|
 | 44 |   str_to_lower_case   |       string str    |      void      | Change toutes les majuscules en minuscules|
 | 45 |   str_to_upper_case   |       string str    |      void      | Change toutes les minuscules en majuscules|
+| 46 |   my_putstr   |       string str    |      void      | affiche la string dans la sortie 1 (terminal) |
+| 47 |   my_putstr_err   |       string str    |      void      | affiche la string dans la sortie 2 (terminal) |
+| 48 |   my_putstr_fd   |       string str, int fd    |      ssize_t      | affiche la string dans la sortie fd et retourne son résultat |
 
 # INFORMATIONS
 Toutes les string ou text doivent être free. La variable de type text peut être free par la fonction free_split(text split). La variable de type string doit être free par la fonction free de la lib stdlib.h
