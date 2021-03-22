@@ -169,7 +169,20 @@ int is_alphanumeric(char c);
  * @return string with only \0
  */
 string empty_str(void);
+
+/**
+ * put double in str
+ * @param f > double
+ * @param precision > nb digits after coma
+ * @return string that contain double
+ */
 string double_to_str(double f, int precision);
+
+/**
+ * change string to double
+ * @param str > string thaht contain double
+ * @return double
+ */
 double str_to_double(string str);
 
 /**
