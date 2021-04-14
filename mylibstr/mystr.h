@@ -334,5 +334,11 @@ ssize_t my_putstr_fd(string str, int fd);
  */
 void my_puttext(text txt, int fd);
 
+/**
+ * split string by occurence of splitter
+ * @param str > string to split
+ * @param splitter > string that split str
+ * @return text of splitted string str
+ */
 text split_sstr(string str, string splitter);
 #endif /* !MYSTR_H_ */
