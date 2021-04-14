@@ -23,7 +23,7 @@ void add_line_ptext(text *txt, int pos)
         new_text[i + 1] = copy_str((*txt)[i]);
     new_text[pos] = empty_str();
     new_text[size + 1] = NULL;
-    free_split(*txt);
+    free_text(*txt);
     *txt = new_text;
 }
 
@@ -36,7 +36,7 @@ void add_line_text(text *txt)
         new_text[i] = copy_str((*txt)[i]);
     new_text[size] = empty_str();
     new_text[size + 1] = NULL;
-    free_split(*txt);
+    free_text(*txt);
     *txt = new_text;
 }
 

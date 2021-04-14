@@ -24,7 +24,7 @@ double str_to_double(string str)
         for (int i = 0; i < length(split[1]); i++)
             b_b = b_b / 10.0;
     }
-    free_split(split);
+    free_text(split);
     if (res > 0)
         res += b_b;
     else

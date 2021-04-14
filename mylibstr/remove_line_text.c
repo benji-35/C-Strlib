@@ -27,7 +27,7 @@ void remove_line_text(text *txt, int pos)
         }
     }
     new_text[size - 1] = NULL;
-    free_split(*txt);
+    free_text(*txt);
     *txt = new_text;
 }
 

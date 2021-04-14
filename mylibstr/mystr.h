@@ -124,7 +124,7 @@ int length_text(text split);
  * free text
  * @param split > text type
  */
-void free_split(text split);
+void free_text(text split);
 
 /**
  * add char in str at specific position

@@ -38,7 +38,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 17 |     empty_str_size    |       int size      |     string     | Return an empty string with size  give in argument|
 | 18 |      str_equality     |     string str1, string str2   |       int      | Return 1 if str1 and str2 are equals|
 | 19 |       finish_with     |     string str1, string str2     |       int      | Return 1 if str1 finish with str2   |
-| 20 |       free_split      |      text split     |      void      | Free the text                       |
+| 20 |       free_text      |      text split     |      void      | Free the text                       |
 | 21 |    insert_char_str    |      string *str, int position, char c |     void     | Add a char at the position in the string |
 | 22 |      insert_str_s     |      string *str, string to_insert, int pos|      void      | Add a string at the position in the string str |
 | 23 |       int_to_str      |        int nb       |     string     | Return int in string                |
@@ -92,7 +92,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 17 |     empty_str_size    |       int size      |     string     | Retourne une string vide ayant la taille demandé|
 | 18 |      str_equality     |     string str1, string str2   |       int      | Retourne 1 si la string 1 est égale à la string 2 sinon la fonction retourne 0|
 | 19 |       finish_with     |     string str1, string str2     |       int      | Retourne 1 si la string 1 finit avec la string 2 sinon la fonction retourne 0|
-| 20 |       free_split      |      text split     |      void      | Free le text|
+| 20 |       free_text      |      text split     |      void      | Free le text|
 | 21 |    insert_char_str    |      string *str, int position, char c |     void     | Ajoute un char à une position dans la string|
 | 22 |      insert_str_s     |      string *str, string to_insert, int pos|      void      | Insert une string dans une string à une position précise|
 | 23 |       int_to_str      |        int nb       |     string     | Retourne un nombre entier en string|
@@ -124,4 +124,4 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 49 |   void my_puttext   |  text txt, int fd  |      void      | affiche un texte dans la sortie fd |
 
 # INFORMATIONS
-Toutes les string ou text doivent être free. La variable de type text peut être free par la fonction free_split(text split). La variable de type string doit être free par la fonction free de la lib stdlib.h
+Toutes les string ou text doivent être free. La variable de type text peut être free par la fonction free_text(text split). La variable de type string doit être free par la fonction free de la lib stdlib.h

@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include "mystr.h"
 
-void free_split(text split)
+void free_text(text split)
 {
     int u = 0;
 

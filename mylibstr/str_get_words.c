@@ -57,7 +57,7 @@ static void rm_o_str(text *txt)
         }
     }
     res[size - nb_o] = NULL;
-    free_split(*txt);
+    free_text(*txt);
     *txt = res;
 }
 
