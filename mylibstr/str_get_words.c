@@ -44,7 +44,7 @@ static void complete_str_splitw(string str, int size, string result)
 
 static void rm_o_str(text *txt)
 {
-    int size = length_split(*txt);
+    int size = length_text(*txt);
     int nb_o = nb_o_split(*txt);
     int curr = 0;
     char **res = malloc(sizeof(char *) * ((size - nb_o) + 1));

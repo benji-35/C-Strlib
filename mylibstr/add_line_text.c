@@ -10,7 +10,7 @@
 
 void add_line_ptext(text *txt, int pos)
 {
-    int size = length_split(*txt);
+    int size = length_text(*txt);
     text new_text = malloc(sizeof(char *) * (size + 2));
 
     if (pos >= size)
@@ -29,7 +29,7 @@ void add_line_ptext(text *txt, int pos)
 
 void add_line_text(text *txt)
 {
-    int size = length_split(*txt);
+    int size = length_text(*txt);
     text new_text = malloc(sizeof(char *) * (size + 2));
 
     for (int i = 0; i < size; i++)
@@ -44,7 +44,7 @@ void add_str_text(text *text, int pos, string str)
 {
     if (text == NULL)
         return;
-    int size = length_split(*text);
+    int size = length_text(*text);
     if (pos >= size)
         pos = size;
     if (pos <= 0)

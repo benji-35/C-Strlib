@@ -12,7 +12,7 @@ void remove_line_text(text *txt, int pos)
 {
     if (*txt == NULL)
         return;
-    int size = length_split(*txt);
+    int size = length_text(*txt);
     int curr = 0;
     if (pos < 0)
         pos = 0;

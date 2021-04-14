@@ -17,7 +17,7 @@ double str_to_double(string str)
     int b = 0;
     double b_b = 0.0;
     double res = (double)a;
-    if (length_split(split) == 2)
+    if (length_text(split) == 2)
         b = str_to_int(split[1]);
     if (b != 0) {
         b_b = (double)b;

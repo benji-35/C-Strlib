@@ -19,7 +19,7 @@ int length(string str)
     return (r);
 }
 
-int length_split(text split)
+int length_text(text split)
 {
     int r = 0;
 

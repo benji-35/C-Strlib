@@ -118,7 +118,7 @@ text get_words(string str);
  * @param split > text type
  * @return size of text
  */
-int length_split(text split);
+int length_text(text split);
 
 /**
  * free text
@@ -327,4 +327,12 @@ void my_putstr_err(string str);
  */
 ssize_t my_putstr_fd(string str, int fd);
 
+/**
+ * display text in specific output
+ * @param txt > text want to be display
+ * @param fd > output to display
+ */
+void my_puttext(text txt, int fd);
+
+text split_sstr(string str, string splitter);
 #endif /* !MYSTR_H_ */
