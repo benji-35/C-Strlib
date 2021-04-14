@@ -67,6 +67,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 46 |   my_putstr   |       string str    |      void      | display string in output 1 (terminal) |
 | 47 |   my_putstr_err   |       string str    |      void      | display string in output 2 (terminal) |
 | 48 |   my_putstr_fd   |       string str, int fd    |      ssize_t      | display string in output fd and return result |
+| 49 |   void my_puttext   |  text txt, int fd  |      void      | display text in output fd |
 
 # FUNCTION LIST (VERSION FRANÇAISE)
 
@@ -120,6 +121,7 @@ Librairie complète sur les strings en constante mise à jour pour avoir le plus
 | 46 |   my_putstr   |       string str    |      void      | affiche la string dans la sortie 1 (terminal) |
 | 47 |   my_putstr_err   |       string str    |      void      | affiche la string dans la sortie 2 (terminal) |
 | 48 |   my_putstr_fd   |       string str, int fd    |      ssize_t      | affiche la string dans la sortie fd et retourne son résultat |
+| 49 |   void my_puttext   |  text txt, int fd  |      void      | affiche un texte dans la sortie fd |
 
 # INFORMATIONS
 Toutes les string ou text doivent être free. La variable de type text peut être free par la fonction free_split(text split). La variable de type string doit être free par la fonction free de la lib stdlib.h
